@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvBtnGetStartedInFragment"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/round_croner_get_started"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Get Started"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+    />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_images"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+    />
+
+    <FrameLayout
+            android:id="@+id/fl_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

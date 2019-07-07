@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.customgallery.customviews.SquareRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivCustomImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+           />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="@android:color/black"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ivOverlaySelected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#ff0f50"
+            android:visibility="visible" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvImageCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="7dp"
+            android:background="@drawable/image_count_circle_round_background"
+            android:gravity="center"
+            android:textColor="#343434"
+            android:textSize="10sp"
+            android:visibility="visible"
+            tools:text="9" />
+
+    <android.support.v7.widget.AppCompatImageView
+    android:id="@+id/ivAlertImage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:src="@drawable/ic_launcher_background"
+    android:visibility="gone" />
+
+    </com.customgallery.customviews.SquareRelativeLayout>
+
+

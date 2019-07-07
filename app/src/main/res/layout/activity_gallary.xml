@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/clMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+<!--        <include
+            android:id="@+id/layoutTopBar"
+            layout="@layout/home_screen_top_bar" />-->
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tbLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:tabGravity="fill"
+            app:tabIndicator="@drawable/custom_tab_indicator"
+            app:tabIndicatorColor="#0eb9cb"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="scrollable"
+            app:tabTextAppearance="@style/MyCustomTextAppearance" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_above="@+id/tvMessageCountAlert"
+            android:layout_below="@+id/tbLayout"
+            android:id="@+id/vPImageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tvMessageCountAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#00B8C9"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:visibility="gone"
+            tools:text="Select 3 more images" />
+
+
+        <!--get started button-->
+        <FrameLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/frame_bring_wall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/transparent_light_black"
+            android:paddingTop="300dp"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvBringWallToLife"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/round_croner_get_started"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:text="Start" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
