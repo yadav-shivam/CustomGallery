@@ -2,6 +2,9 @@
 
 This project is made to create a customized gallery in your app. The gallery shows the media folderwise.
 
+<img src="https://github.com/yadavshivam3000/CustomGallery/blob/master/app/src/main/res/raw/CustomGallery.png"/>
+
+
 ## Getting Started
 
 This sample uses the Gradle build system.
